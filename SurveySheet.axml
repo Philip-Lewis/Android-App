@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tabSampleSubmissionForm"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginBottom="0.0dp">
+        <ScrollView xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:fillViewport="false">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout47">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout47">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout8">
+                        <TextView
+                            android:text="Survey Sheet"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textAlignment="center"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/textView3" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:paddingTop="50dp"
+                        android:background="@android:color/darker_gray"
+                        android:id="@+id/linearLayout9"
+                        android:layout_marginTop="4.0dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dp"
+                        android:id="@+id/linearLayoutReportName">
+                        <TextView
+                            android:text="Survey Name:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/FormNametextView" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Sheet Name"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtSheetName" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dp"
+                        android:id="@+id/linearLayoutDate">
+                        <TextView
+                            android:text="Date:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/DatetextView" />
+                        <EditText
+                            android:inputType="date"
+                            android:layout_width="256dp"
+                            android:layout_height="match_parent"
+                            android:hint="Date"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtDate" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Job Number:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwJob"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Job Number"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtJob"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout45">
+                        <TextView
+                            android:text="Client:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwClientName"
+                            android:layout_marginRight="8.0dp" />
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Client"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtClientName" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Address &amp; Postcode:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwAddress"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address &amp; Postcode"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtAddress"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Reason For Survey:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwReasonForSurvey"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Reason For Survey"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtReasonForSurvey"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Water:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwWater"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Water"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtWater"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Power:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwPower"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Power"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtPower"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Parking:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwParking"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Parking"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtParking"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="Total Samples Taken:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwTotalSamplesTaken"
+                            android:layout_marginRight="0.0dp" />
+                        <EditText
+                            android:inputType="number"
+                            android:layout_width="256dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Total Samples Taken"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtTotalSamplesTaken"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <TextView
+                            android:text="General Comments ref site (restrictions, problems, or issues to be resolved prior to removal works etc):"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwGeneralComments"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout46">
+                        <EditText
+                            android:inputType="textMultiLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="General Comments ref site (restriction, problems, or issues to be resolved prior to removal works etc)"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtGeneralComments"
+                            android:layout_marginRight="0.0dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60.0dp"
+                        android:id="@+id/linearLayout44">
+                        <TextView
+                            android:text="Site Information Room Sketch:"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwSketch"
+                            android:layout_marginRight="293.0dp" />
+                        <ImageView
+                            android:src="@android:drawable/ic_menu_gallery"
+                            android:id="@+id/imgSketch"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                        <ImageButton
+                            android:src="@android:drawable/ic_menu_edit"
+                            android:id="@+id/btnSketch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="16sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout45">
+                        <TextView
+                            android:text="Surveyor:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtvwSurveyorName"
+                            android:layout_marginRight="8.0dp" />
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Surveyor"
+                            android:imeOptions="actionDone"
+                            android:id="@+id/txtPrintName" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout46">
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="450dp" />
+                    <ImageButton
+                        android:src="@android:drawable/ic_input_add"
+                        android:id="@+id/btnNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp" />
+                    <ImageButton
+                        android:src="@android:drawable/ic_menu_rotate"
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3.5dp" />
+                </LinearLayout>
+                <fragment
+                    class="DBLogic.SCI.SafeStore.MobileApp.Fragments.SurveySheetRoomListFragment"
+                    android:id="@+id/ctlSurveySheetRoom"
+                    android:layout_weight="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="400px" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout28">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout29">
+            <Button
+                android:text="Close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCancel" />
+            <Button
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDelete" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/vwProgressBar"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:alpha="0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prgSaveProgress"
+                    android:progress="50"
+                    android:progressBackgroundTint="#ff000000"
+                    android:progressTint="#ff2d1f5a"
+                    android:secondaryProgressTint="#00000000"
+                    android:progressBackgroundTintMode="multiply"
+                    android:secondaryProgress="0" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout30">
+                    <TextView
+                        android:text="Saving changes..."
+                        android:id="@+id/lblProgressStatus"
+                        android:gravity="center"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                    <TextView
+                        android:text="##/##"
+                        android:id="@+id/lblProgressNumber"
+                        android:gravity="center"
+                        android:layout_width="5sp"
+                        android:layout_height="0px"
+                        android:layout_weight="2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textOff="View"
+            android:textOn="Edit"
+            android:id="@+id/ModeSwitch"
+            android:visibility="invisible"
+            android:layout_marginLeft="9.0dp" />
+        <Button
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Upload"
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
